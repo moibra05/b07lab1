@@ -1,7 +1,5 @@
 import java.util.Arrays;
 
-import javax.swing.SpringLayout;
-
 import java.io.*;
 
 public class Polynomial {
