@@ -1,4 +1,7 @@
 import java.util.Arrays;
+
+import javax.swing.SpringLayout;
+
 import java.io.*;
 
 public class Polynomial {
@@ -32,8 +35,14 @@ public class Polynomial {
           String[] term = splitLine[i].split("[x]");
 
           if (term.length == 1) {
-            coefficients[i] = Double.parseDouble(term[0]);
-            exponents[i] = 0;
+            if (term[0].equals("+") || term[0].equals("")) {
+              coefficients[i] = 1;
+            } else if (term[0].equals("-")) {
+              coefficients[i] = -1;
+            } else {
+              coefficients[i] = Double.parseDouble(term[0]);
+              exponents[i] = 0;
+            }
           } else {
             if (term[0].equals("+") || term[0].equals("")) {
               coefficients[i] = 1;

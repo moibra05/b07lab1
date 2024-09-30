@@ -126,10 +126,10 @@ public class Driver {
 
   public static void main(String[] args) {
 
-    // File path = new File("./file.txt");
-    // Polynomial p1 = new Polynomial(path);
-    // System.out.println(Arrays.toString(p1.coefficients));
-    // System.out.println(Arrays.toString(p1.exponents));
+    File path = new File("./file.txt");
+    Polynomial p1 = new Polynomial(path);
+    System.out.println(Arrays.toString(p1.coefficients));
+    System.out.println(Arrays.toString(p1.exponents));
 
     // double[] c1 = { 6, -1, 1 };
     // int[] e1 = { 0, 1, 2 };
